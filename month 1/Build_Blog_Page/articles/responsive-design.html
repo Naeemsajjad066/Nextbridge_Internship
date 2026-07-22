@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Web Design – Tech Insights</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="article.css">
+</head>
+
+<body>
+
+    <nav class="top-nav">
+        <a href="../index.html">← Back to Blog</a>
+    </nav>
+
+    <div class="article-hero">
+        <img src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?w=1200&q=80"
+            alt="Multiple devices showing a responsive website">
+    </div>
+
+    <div class="article-wrapper">
+        <h1>Responsive Web Design</h1>
+
+        <div class="meta">
+            <span class="author">By Sana Malik</span>
+            <span class="divider">·</span>
+            <time datetime="2026-07-10">July 10, 2026</time>
+            <span class="divider">·</span>
+            <span>4 min read</span>
+        </div>
+
+        <h2>The Mobile-First Reality</h2>
+        <h3>Why It Matters</h3>
+        <p>Over 60% of global web traffic now comes from mobile devices. A website that only looks good on a desktop is
+            already failing the majority of its visitors. Responsive design ensures every user gets a great experience
+            regardless of screen size.</p>
+
+        <h2>The Three Pillars</h2>
+        <h3>Flexible Grids</h3>
+        <p>Use relative units like percentages and <code>fr</code> instead of fixed pixel widths. Your layout should
+            stretch and shrink fluidly as the viewport changes.</p>
+
+        <pre>.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}</pre>
+
+        <h3>Fluid Images</h3>
+        <p>Images should never overflow their containers. Setting <code>max-width: 100%</code> on images is a simple
+            rule that prevents horizontal scrollbars and broken layouts on small screens.</p>
+
+        <pre>img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}</pre>
+
+        <h3>Media Queries</h3>
+        <p>Media queries let you apply different CSS rules at specific viewport widths. The mobile-first approach means
+            you write base styles for small screens, then add breakpoints for larger ones.</p>
+
+        <pre>/* Base: mobile */
+.grid { grid-template-columns: 1fr; }
+
+/* Tablet */
+@media (min-width: 600px) {
+    .grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* Desktop */
+@media (min-width: 900px) {
+    .grid { grid-template-columns: repeat(3, 1fr); }
+}</pre>
+
+        <blockquote>Design for the smallest screen first, then progressively enhance the experience for larger
+            viewports.</blockquote>
+
+        <h2>Conclusion</h2>
+        <p>Responsive design is not optional — it's the baseline expectation for every website. Combining flexible
+            grids, fluid images, and smart media queries gives you a solid foundation that works everywhere.</p>
+    </div>
+
+    <footer>
+        <p>© 2026 Tech Insights · All rights reserved</p>
+    </footer>
+
+</body>
+
+</html>

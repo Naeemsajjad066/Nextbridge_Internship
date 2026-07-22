@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Understanding CSS Grid – Tech Insights</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="article.css">
+</head>
+<body>
+
+    <nav class="top-nav">
+        <a href="../index.html">← Back to Blog</a>
+    </nav>
+
+    <div class="article-hero">
+        <img src="https://images.unsplash.com/photo-1587620962725-abab7fe55159?w=1200&q=80" alt="A developer writing CSS code on a laptop">
+    </div>
+
+    <div class="article-wrapper">
+        <h1>Understanding CSS Grid</h1>
+
+        <div class="meta">
+            <span class="author">By Ayesha Siddiqui</span>
+            <span class="divider">·</span>
+            <time datetime="2026-07-17">July 17, 2026</time>
+            <span class="divider">·</span>
+            <span>5 min read</span>
+        </div>
+
+        <h2>What is CSS Grid?</h2>
+        <h3>Overview</h3>
+        <p>CSS Grid Layout is a two-dimensional layout system built directly into CSS. Unlike Flexbox, which handles one axis at a time, Grid lets you control both rows and columns simultaneously — making it ideal for page-level layouts and complex UI components.</p>
+        <p>Before Grid, developers relied on floats, tables, and positioning hacks to build layouts. Grid replaces all of that with a clean, declarative syntax.</p>
+
+        <h2>Core Concepts</h2>
+        <h3>Defining a Grid</h3>
+        <p>You turn any element into a grid container with <code>display: grid</code>. From there, you define columns and rows using <code>grid-template-columns</code> and <code>grid-template-rows</code>.</p>
+
+        <pre>.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}</pre>
+
+        <p>The <code>1fr</code> unit means "one fraction of the available space", so <code>repeat(3, 1fr)</code> creates three equal columns that share the container width.</p>
+
+        <h3>Placing Items</h3>
+        <p>Grid items can be placed explicitly using line numbers, or left to auto-placement. You can span items across multiple columns or rows with <code>grid-column</code> and <code>grid-row</code>.</p>
+
+        <pre>.featured {
+    grid-column: 1 / 3; /* spans columns 1 and 2 */
+    grid-row: 1 / 2;
+}</pre>
+
+        <h2>Responsive Grids</h2>
+        <h3>Using auto-fit and minmax</h3>
+        <p>One of Grid's most powerful patterns is combining <code>auto-fit</code> with <code>minmax()</code> to create fully responsive layouts without any media queries.</p>
+
+        <pre>.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}</pre>
+
+        <blockquote>This single line of CSS creates a grid that automatically adjusts the number of columns based on the available space — no breakpoints needed.</blockquote>
+
+        <h2>Conclusion</h2>
+        <p>CSS Grid is one of the most impactful additions to CSS in years. Once you understand its core concepts — containers, tracks, lines, and areas — you'll reach for it naturally any time you need structured layout control.</p>
+    </div>
+
+    <footer>
+        <p>© 2026 Tech Insights · All rights reserved</p>
+    </footer>
+
+</body>
+</html>

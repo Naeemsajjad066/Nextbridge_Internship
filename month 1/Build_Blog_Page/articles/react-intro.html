@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Getting Started with React – Tech Insights</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="article.css">
+</head>
+<body>
+
+    <nav class="top-nav">
+        <a href="../index.html">← Back to Blog</a>
+    </nav>
+
+    <div class="article-hero">
+        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1200&q=80" alt="React component code on a monitor">
+    </div>
+
+    <div class="article-wrapper">
+        <h1>Getting Started with React</h1>
+
+        <div class="meta">
+            <span class="author">By Bilal Chaudhry</span>
+            <span class="divider">·</span>
+            <time datetime="2026-07-08">July 8, 2026</time>
+            <span class="divider">·</span>
+            <span>8 min read</span>
+        </div>
+
+        <h2>What is React?</h2>
+        <h3>Key Concepts</h3>
+        <p>React is a JavaScript library for building user interfaces. Developed by Meta, it introduced the idea of breaking UIs into small, reusable components — each managing its own logic and appearance.</p>
+        <p>Instead of manually updating the DOM, you describe what the UI should look like for a given state, and React figures out the minimal set of changes needed to get there.</p>
+
+        <h2>Components</h2>
+        <h3>Building Blocks</h3>
+        <p>A React component is a JavaScript function that returns JSX — a syntax that looks like HTML but lives inside your JS file. Components can be composed together to build complex UIs from simple pieces.</p>
+
+        <pre>function Button({ label, onClick }) {
+    return (
+        &lt;button onClick={onClick}&gt;
+            {label}
+        &lt;/button&gt;
+    );
+}</pre>
+
+        <h2>Props and State</h2>
+        <h3>Data Flow</h3>
+        <p>Props are read-only values passed from a parent component to a child. State is internal data that a component owns and can change over time. When state changes, React re-renders the component automatically.</p>
+
+        <pre>import { useState } from 'react';
+
+function Counter() {
+    const [count, setCount] = useState(0);
+
+    return (
+        &lt;div&gt;
+            &lt;p&gt;Count: {count}&lt;/p&gt;
+            &lt;button onClick={() =&gt; setCount(count + 1)}&gt;
+                Increment
+            &lt;/button&gt;
+        &lt;/div&gt;
+    );
+}</pre>
+
+        <blockquote>React's one-way data flow makes it easy to trace where your data comes from and predict how your UI will behave.</blockquote>
+
+        <h2>Conclusion</h2>
+        <p>React's component model, props, and state form the foundation of everything else in the ecosystem. Once these click, concepts like hooks, context, and routing become much easier to pick up.</p>
+    </div>
+
+    <footer>
+        <p>© 2026 Tech Insights · All rights reserved</p>
+    </footer>
+
+</body>
+</html>
