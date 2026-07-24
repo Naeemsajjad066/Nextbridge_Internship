@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript ES6 Features – Tech Insights</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="article.css">
+</head>
+<body>
+
+    <nav class="top-nav">
+        <a href="../index.html">← Back to Blog</a>
+    </nav>
+
+    <div class="article-hero">
+        <img src="https://images.unsplash.com/photo-1579468118864-1b9ea3c0db4a?w=1200&q=80" alt="JavaScript code on a screen">
+    </div>
+
+    <div class="article-wrapper">
+        <h1>JavaScript ES6 Features</h1>
+
+        <div class="meta">
+            <span class="author">By Usman Tariq</span>
+            <span class="divider">·</span>
+            <time datetime="2026-07-15">July 15, 2026</time>
+            <span class="divider">·</span>
+            <span>7 min read</span>
+        </div>
+
+        <h2>Why ES6 Changed Everything</h2>
+        <h3>Highlights</h3>
+        <p>ES2015 (ES6) was the largest update to JavaScript since its creation. It addressed years of developer frustration with verbose syntax, awkward scoping, and missing language features. Here are the changes you'll use every day.</p>
+
+        <h2>Arrow Functions</h2>
+        <h3>Shorter Syntax</h3>
+        <p>Arrow functions give you a concise way to write function expressions, and they inherit <code>this</code> from their surrounding scope — solving one of the most common JS gotchas.</p>
+
+        <pre>// Before ES6
+const double = function(n) { return n * 2; };
+
+// ES6 arrow function
+const double = n => n * 2;</pre>
+
+        <h2>Destructuring</h2>
+        <h3>Unpacking Values</h3>
+        <p>Destructuring lets you pull values out of arrays or objects into variables in a single, readable line.</p>
+
+        <pre>const user = { name: 'Sara', age: 28, city: 'Nairobi' };
+const { name, city } = user;
+
+const [first, second] = [10, 20, 30];</pre>
+
+        <h2>Template Literals</h2>
+        <h3>String Interpolation</h3>
+        <p>Template literals use backticks and <code>${}</code> placeholders, replacing messy string concatenation with readable inline expressions.</p>
+
+        <pre>const greeting = `Hello, ${name}! You are ${age} years old.`;</pre>
+
+        <h2>Modules</h2>
+        <h3>Import and Export</h3>
+        <p>ES6 modules give JavaScript a native way to split code across files, replacing script-tag soup and IIFE patterns.</p>
+
+        <pre>// math.js
+export const add = (a, b) => a + b;
+
+// main.js
+import { add } from './math.js';</pre>
+
+        <blockquote>ES6 didn't just add features — it changed the way JavaScript developers think about writing clean, maintainable code.</blockquote>
+
+        <h2>Conclusion</h2>
+        <p>Arrow functions, destructuring, template literals, and modules are now fundamental JavaScript. Mastering these features will make your code shorter, cleaner, and much easier to work with on any modern project.</p>
+    </div>
+
+    <footer>
+        <p>© 2026 Tech Insights · All rights reserved</p>
+    </footer>
+
+</body>
+</html>

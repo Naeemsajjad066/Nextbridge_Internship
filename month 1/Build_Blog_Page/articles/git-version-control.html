@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git & Version Control – Tech Insights</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="article.css">
+</head>
+<body>
+
+    <nav class="top-nav">
+        <a href="../index.html">← Back to Blog</a>
+    </nav>
+
+    <div class="article-hero">
+        <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=1200&q=80" alt="Terminal showing git commands">
+    </div>
+
+    <div class="article-wrapper">
+        <h1>Git &amp; Version Control</h1>
+
+        <div class="meta">
+            <span class="author">By Hamza Iqbal</span>
+            <span class="divider">·</span>
+            <time datetime="2026-07-01">July 1, 2026</time>
+            <span class="divider">·</span>
+            <span>5 min read</span>
+        </div>
+
+        <h2>What is Git?</h2>
+        <h3>Why Every Dev Needs It</h3>
+        <p>Git is a distributed version control system that tracks changes to your files over time. Every change you make is recorded as a snapshot called a commit, giving you a full history of your project that you can navigate, compare, and revert at any point.</p>
+        <p>Without Git, collaborating on code means emailing files, manually merging changes, and hoping nothing gets overwritten. With Git, all of that is handled cleanly and safely.</p>
+
+        <h2>Essential Commands</h2>
+        <h3>Day-to-Day Workflow</h3>
+        <p>Most of your daily Git work comes down to a handful of commands:</p>
+
+        <pre>git init              # start tracking a project
+git add .             # stage all changes
+git commit -m "msg"   # save a snapshot
+git status            # see what's changed
+git log               # view commit history</pre>
+
+        <h2>Branching</h2>
+        <h3>Working in Parallel</h3>
+        <p>Branches let you work on a new feature or bug fix in isolation without affecting the main codebase. When the work is done, you merge it back.</p>
+
+        <pre>git branch feature/login    # create a branch
+git checkout feature/login  # switch to it
+git merge feature/login     # merge back to main</pre>
+
+        <blockquote>A good branching strategy is the difference between a calm release and a chaotic one. Branch early, commit often, and merge with intent.</blockquote>
+
+        <h2>Working with GitHub</h2>
+        <h3>Remote Repositories</h3>
+        <p>GitHub hosts your Git repository in the cloud, making it easy to back up your work and collaborate with others. The core remote workflow is push and pull.</p>
+
+        <pre>git remote add origin https://github.com/user/repo.git
+git push -u origin main     # push to GitHub
+git pull origin main        # get latest changes</pre>
+
+        <h2>Conclusion</h2>
+        <p>Git is non-negotiable for any serious developer. Start simple — init, add, commit, push — and the more advanced concepts like branching and rebasing will come naturally as you use it every day.</p>
+    </div>
+
+    <footer>
+        <p>© 2026 Tech Insights · All rights reserved</p>
+    </footer>
+
+</body>
+</html>

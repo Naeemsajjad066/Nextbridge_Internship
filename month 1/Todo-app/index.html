@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="min-h-screen bg-slate-200 flex items-center justify-center">
+
+    <!-- Main card -->
+    <main class="w-full max-w-lg bg-white rounded-xl shadow-lg p-6">
+
+        <!-- Page heading -->
+        <h1 class="text-3xl font-bold text-center mb-6">
+            Todo App
+        </h1>
+
+        <section class="flex gap-3 mb-6">
+
+            <input
+                id="taskInput"
+                type="text"
+                placeholder="Enter a task..."
+                class="flex-1 border border-slate-300 rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-blue-500"
+            >
+
+            <button
+                id="addBtn"
+                class="bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 transition"
+            >
+                Add
+            </button>
+
+        </section>
+
+        <!-- Filter buttons: All / Active / Completed -->
+        <section class="flex justify-center gap-3 mb-6">
+
+            <button id="allBtn"       class="px-4 py-2 rounded-md bg-blue-600 text-white">All</button>
+            <button id="activeBtn"    class="px-4 py-2 rounded-md bg-slate-200 hover:bg-slate-300 transition">Active</button>
+            <button id="completedBtn" class="px-4 py-2 rounded-md bg-slate-200 hover:bg-slate-300 transition">Completed</button>
+
+        </section>
+
+        <!-- Task list — populated by script.js -->
+        <section id="taskList" class="space-y-3 max-h-60 overflow-y-auto">
+            <!-- Tasks are injected here by JavaScript -->
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

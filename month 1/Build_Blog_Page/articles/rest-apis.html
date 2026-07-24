@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REST APIs Explained – Tech Insights</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="article.css">
+</head>
+<body>
+
+    <nav class="top-nav">
+        <a href="../index.html">← Back to Blog</a>
+    </nav>
+
+    <div class="article-hero">
+        <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=1200&q=80" alt="Server rack representing backend APIs">
+    </div>
+
+    <div class="article-wrapper">
+        <h1>REST APIs Explained</h1>
+
+        <div class="meta">
+            <span class="author">By Zara Khan</span>
+            <span class="divider">·</span>
+            <time datetime="2026-07-05">July 5, 2026</time>
+            <span class="divider">·</span>
+            <span>6 min read</span>
+        </div>
+
+        <h2>What is a REST API?</h2>
+        <h3>How They Work</h3>
+        <p>REST (Representational State Transfer) is an architectural style for building web APIs. A REST API exposes resources — like users, posts, or products — via URLs, and clients interact with those resources using standard HTTP methods.</p>
+        <p>REST APIs are stateless, meaning each request contains everything the server needs to respond. There's no session stored on the server between requests.</p>
+
+        <h2>HTTP Methods</h2>
+        <h3>The Four Core Verbs</h3>
+        <p>Each HTTP method maps to a CRUD operation on a resource:</p>
+
+        <pre>GET    /articles       → list all articles
+GET    /articles/1     → get article with id 1
+POST   /articles       → create a new article
+PUT    /articles/1     → update article with id 1
+DELETE /articles/1     → delete article with id 1</pre>
+
+        <h2>Status Codes</h2>
+        <h3>What the Server Is Telling You</h3>
+        <p>HTTP status codes tell the client whether a request succeeded or why it failed. Knowing the common ones saves hours of debugging.</p>
+
+        <pre>200 OK            – success
+201 Created       – resource was created (POST)
+400 Bad Request   – invalid input from client
+401 Unauthorized  – authentication required
+404 Not Found     – resource doesn't exist
+500 Server Error  – something broke on the server</pre>
+
+        <blockquote>A well-designed REST API is self-descriptive — the URL tells you what the resource is, the method tells you what to do with it, and the status code tells you what happened.</blockquote>
+
+        <h2>Consuming an API</h2>
+        <h3>Using fetch in JavaScript</h3>
+        <p>The browser's built-in <code>fetch</code> function makes it straightforward to call a REST API from any JavaScript application.</p>
+
+        <pre>const response = await fetch('https://api.example.com/articles');
+const articles = await response.json();
+console.log(articles);</pre>
+
+        <h2>Conclusion</h2>
+        <p>REST APIs are the universal language of the web. Understanding resources, HTTP methods, and status codes gives you the foundation to work with any API — whether you're building one or consuming one.</p>
+    </div>
+
+    <footer>
+        <p>© 2026 Tech Insights · All rights reserved</p>
+    </footer>
+
+</body>
+</html>
