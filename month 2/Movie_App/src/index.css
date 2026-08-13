@@ -1,0 +1,150 @@
+@import 'tailwindcss';
+
+/* ==============================================
+   PROFESSIONAL RESPONSIVE DESIGN UTILITIES
+   ============================================== */
+
+/* Custom Breakpoint Support for extra-small screens */
+@media (min-width: 475px) {
+  .xs\:flex-row {
+    flex-direction: row;
+  }
+  .xs\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .xs\:w-52 {
+    width: 13rem;
+  }
+  .xs\:h-80 {
+    height: 20rem;
+  }
+  .xs\:items-center {
+    align-items: center;
+  }
+}
+
+/* Mobile Viewport Height Fix - Handles browser UI */
+@supports (height: 100dvh) {
+  .hero-container {
+    min-height: 100dvh;
+  }
+}
+
+@supports not (height: 100dvh) {
+  .hero-container {
+    min-height: 100vh;
+  }
+}
+
+/* Safe Area for Mobile Notches and Bottom UI */
+.pb-safe {
+  padding-bottom: max(1rem, env(safe-area-inset-bottom));
+}
+
+.pt-safe {
+  padding-top: max(1rem, env(safe-area-inset-top));
+}
+
+/* Prevent layout shift on mobile with dynamic height */
+@media screen and (max-width: 640px) {
+  /* Smooth scrolling for mobile */
+  html {
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* Prevent horizontal scroll */
+  body {
+    overflow-x: hidden;
+  }
+
+  /* Touch-friendly button sizing */
+  button,
+  a[role='button'] {
+    min-height: 44px;
+    min-width: 44px;
+  }
+}
+
+/* High-resolution display optimization */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  img {
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+  }
+}
+
+/* Tablet landscape optimization */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .hero-container {
+    min-height: 100vh;
+  }
+}
+
+/* Focus visible for accessibility */
+*:focus-visible {
+  outline: 2px solid #f59e0b;
+  outline-offset: 2px;
+}
+
+/* Smooth transitions for all interactive elements */
+button,
+a,
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Prevent text overflow on all screen sizes */
+.break-words {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  hyphens: auto;
+}
+
+/* Custom scrollbar for webkit browsers */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1e293b;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #475569;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #64748b;
+}
+
+/* Loading states optimization */
+@keyframes shimmer {
+  0% {
+    background-position: -1000px 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}
+
+.loading-shimmer {
+  animation: shimmer 2s infinite linear;
+  background: linear-gradient(to right, #1e293b 0%, #334155 50%, #1e293b 100%);
+  background-size: 1000px 100%;
+}
+
+/* Reduced motion support for accessibility */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
