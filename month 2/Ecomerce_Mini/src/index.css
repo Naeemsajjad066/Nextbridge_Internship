@@ -1,0 +1,75 @@
+@import 'tailwindcss';
+
+/* Tailwind Theme Configuration */
+@theme {
+  /* Custom Colors */
+  --color-primary: #059669;
+  --color-dark: #1f2937;
+  --color-background: #f8fafc;
+  --color-cards: #ffffff;
+  --color-accent: #84cc16;
+  --color-text: #111827;
+  --color-muted: #64748b;
+
+  /* Tailwind Color Aliases */
+  --color-emerald-custom: #059669;
+  --color-dark-slate: #1f2937;
+  --color-lime-custom: #84cc16;
+}
+
+/* Custom Utility Classes */
+.bg-primary {
+  background-color: var(--color-primary);
+}
+
+.bg-dark {
+  background-color: var(--color-dark);
+}
+
+.bg-background {
+  background-color: var(--color-background);
+}
+
+.bg-cards {
+  background-color: var(--color-cards);
+}
+
+.bg-accent {
+  background-color: var(--color-accent);
+}
+
+.text-primary {
+  color: var(--color-primary);
+}
+
+.text-dark {
+  color: var(--color-dark);
+}
+
+.text-main {
+  color: var(--color-text);
+}
+
+.text-muted {
+  color: var(--color-muted);
+}
+
+.border-primary {
+  border-color: var(--color-primary);
+}
+
+.border-muted {
+  border-color: var(--color-muted);
+}
+
+.focus\:border-primary:focus {
+  border-color: var(--color-primary);
+}
+
+.focus\:ring-primary:focus {
+  --tw-ring-color: var(--color-primary);
+}
+
+.hover\:bg-dark:hover {
+  background-color: var(--color-dark);
+}
