@@ -1,53 +1,80 @@
 import { addProductFromService, deleteProductByIdFromServices, getAllProducts, getProductById } from "../services/productService.js"
+import { AppError } from "../utils/AppError.js"
 
-export const getProducts = async (req, res) => {
+export const getProducts = async (req, res, next) => {
     try {
         const products = await getAllProducts()
-        res.json(products)
-    } catch (error) {
-        res.status(500).json({
-            message: error.message || "Something went wrong"
+        if (!products) {
+            const error = new AppError("Failed to get products", 500)
+            return next(error)
+        }
+        res.status(200).json({
+            success: true,
+            message: "Products fetched successfully",
+            statusCode: 200,
+            data: products
         })
+    } catch (error) {
+        next(error)
     }
 
 }
-export const getProductByIdController = async (req, res) => {
+export const getProductByIdController = async (req, res, next) => {
     try {
         const id = req.params.id
         const product = await getProductById(id)
-        res.json(product)
-    } catch (error) {
-        res.status(500).json({
-            message: error.message || "Something went wrong"
+        if (!product) {
+            const error = new AppError("Product not found", 404)
+            return next(error)
+        }
+        res.status(200).json({
+            success: true,
+            message: "Product fetched successfully",
+            statusCode: 200,
+            data: product
         })
+    } catch (error) {
+        next(error)
     }
 
 }
 
-export const deleteProductByIdFromController = async (req, res) => {
+export const deleteProductByIdFromController = async (req, res, next) => {
     try {
         const id = req.params.id
         const products = await deleteProductByIdFromServices(id)
         if (!products) {
-            return res.status(404).json({ message: "Product not found" })
+            const error = new AppError("Product not found", 404)
+            return next(error)
         }
-        res.json({ message: "Deleted Successfully", data: products })
-    } catch (error) {
-        res.status(500).json({
-            message: error.message || "Something went wrong"
+        res.status(200).json({
+            success: true,
+            message: "Product deleted successfully",
+            statusCode: 200,
+            data: products
         })
+    } catch (error) {
+        next(error)
     }
 }
 
-export const addProductFromController = async (req, res) => {
+export const addProductFromController = async (req, res, next) => {
     try {
         const { name, price } = req.body
         const products = await addProductFromService(name, price)
-        res.json({ message: "Product added successfully", products: products })
-    } catch (error) {
-        res.status(500).json({
-            message:error.message||"Something went wrong"
+
+        if (!products) {
+            const error = new AppError("Failed to add product", 500)
+            return next(error)
+        }
+        res.status(201).json({
+            success: true,
+            message: "Product added successfully",
+            statusCode: 201,
+            data: products
         })
+    } catch (error) {
+        next(error)
     }
 
 }
