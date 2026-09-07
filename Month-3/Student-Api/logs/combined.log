@@ -1,0 +1,13 @@
+{"level":"error","message":"GET undefined failed with 500:ENOENT: no such file or directory, open 'D:\\New\\CMIT Intern\\cmintern3\\Month-3\\data\\students.json'","timestamp":"2026-09-07T06:17:17.711Z"}
+{"level":"error","message":"POST undefined failed with 500:Cannot read properties of undefined (reading 'name')","timestamp":"2026-09-07T06:33:03.420Z"}
+{"level":"error","message":"POST undefined failed with 500:Cannot read properties of undefined (reading 'name')","timestamp":"2026-09-07T06:35:39.632Z"}
+{"level":"error","message":"POST undefined failed with 500:Cannot read properties of undefined (reading 'name')","timestamp":"2026-09-07T06:37:03.911Z"}
+{"level":"info","message":"Student with ID:1788763028996 deleted successfully","timestamp":"2026-09-07T06:47:50.749Z"}
+{"level":"warn","message":"Student with ID:1788763028996 not found","timestamp":"2026-09-07T07:03:55.107Z"}
+{"level":"error","message":"DELETE /students/1788763028996 failed with 404:Student Not Found","timestamp":"2026-09-07T07:03:55.122Z"}
+{"level":"info","message":"Student with ID:1788763002861 deleted successfully","timestamp":"2026-09-07T07:04:12.799Z"}
+{"level":"error","message":"PATCH /students/23243423 failed with 400:At least one student field is required","timestamp":"2026-09-07T07:24:42.867Z"}
+{"level":"error","message":"PATCH /students/23243423 failed with 404:Student Not Found","timestamp":"2026-09-07T07:28:51.714Z"}
+{"level":"error","message":"PATCH /students/1788763049485 failed with 400:At least one student field is required","timestamp":"2026-09-07T07:29:06.545Z"}
+{"level":"error","message":"PUT /students/1788763049485 failed with 400:Name, email, semester and department are required","timestamp":"2026-09-07T07:29:41.341Z"}
+{"level":"error","message":"PUT /students/1788763049485 failed with 400:Name, email, semester and department are required","timestamp":"2026-09-07T07:30:04.636Z"}
