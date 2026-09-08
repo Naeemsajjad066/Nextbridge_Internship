@@ -1,0 +1,124 @@
+{"level":"info","message":"product with name:saban and price:2000 added successfully","timestamp":"2026-09-04T09:23:11.431Z"}
+{"level":"info","message":"product with name:saban and price:2000 added successfully","timestamp":"2026-09-04T09:24:27.694Z"}
+{"level":"error","message":"POST /products failed with status 400: Unexpected token '\"', \"\"{\\n  \\\"na\"... is not valid JSON","timestamp":"2026-09-04T09:29:24.885Z"}
+{"level":"error","message":"POST /products failed with status 400: Unexpected token '\"', \"\"{\\n  \\\"na\"... is not valid JSON","timestamp":"2026-09-04T09:31:35.781Z"}
+{"level":"info","message":"product with name:saban and price:undefined added successfully","timestamp":"2026-09-04T09:31:56.138Z"}
+{"level":"warn","message":"invalid product data with name:saban and price:undefined","timestamp":"2026-09-04T09:34:28.401Z"}
+{"level":"error","message":"POST /products failed with status 400: Product name and price are required","timestamp":"2026-09-04T09:34:28.404Z"}
+{"level":"warn","message":"Product validation failed [object Object]","timestamp":"2026-09-08T06:30:51.796Z"}
+{"level":"error","message":"POST /products failed with status 400: Unexpected token '\"', \"\"{\\n  \\\"na\"... is not valid JSON","timestamp":"2026-09-08T06:31:51.361Z"}
+{"level":"info","message":"product with name:naeem and price:12 added successfully","timestamp":"2026-09-08T06:32:09.885Z"}
+{"level":"warn","message":"Product validation failed [object Object]","timestamp":"2026-09-08T06:38:40.719Z"}
+{"level":"warn","message":"Product validation failed [object Object]","timestamp":"2026-09-08T06:38:59.307Z"}
+{"level":"warn","message":"Product validation failed","timestamp":"2026-09-08T06:45:51.218Z"}
+{"level":"error","message":"POST /products failed with status 500: Errors is not defined","timestamp":"2026-09-08T06:45:51.222Z"}
+{"level":"warn","message":"Product validation failed","timestamp":"2026-09-08T06:46:14.381Z"}
+{"level":"warn","message":"Product validation failed","timestamp":"2026-09-08T06:47:30.642Z"}
+{"level":"warn","message":"Product validation failed","timestamp":"2026-09-08T06:47:40.146Z"}
+{"level":"warn","message":"Product validation failed","timestamp":"2026-09-08T06:47:49.338Z"}
+{"level":"warn","message":"Product validation failed","timestamp":"2026-09-08T06:47:57.937Z"}
+{"level":"warn","message":"Product validation failed","timestamp":"2026-09-08T06:52:00.089Z"}
+{"level":"warn","message":"product with ID:1788429896267 not found","timestamp":"2026-09-08T06:58:54.426Z"}
+{"level":"error","message":"GET /products/1788429896267 failed with status 404: Product not found","timestamp":"2026-09-08T06:58:54.431Z"}
+{"level":"warn","message":"product with ID:1788429896267 not found","timestamp":"2026-09-08T06:59:04.615Z"}
+{"level":"error","message":"GET /products/1788429896267 failed with status 404: Product not found","timestamp":"2026-09-08T06:59:04.617Z"}
+{"level":"warn","message":"product with ID:1788429896267 not found","timestamp":"2026-09-08T06:59:19.262Z"}
+{"level":"error","message":"GET /products/1788429896267 failed with status 404: Product not found","timestamp":"2026-09-08T06:59:19.263Z"}
+{"level":"info","message":"product with ID:1788429896267 fetched successfully","timestamp":"2026-09-08T06:59:34.283Z"}
+{"level":"warn","message":"Product validation failed","timestamp":"2026-09-08T07:12:29.416Z"}
+{"level":"warn","message":"Product validation failed","timestamp":"2026-09-08T07:12:40.420Z"}
+{"level":"warn","message":"Product validation failed","timestamp":"2026-09-08T07:12:56.732Z"}
+{"level":"warn","message":"Product validation failed","timestamp":"2026-09-08T07:13:04.663Z"}
+{"level":"info","message":"product with ID:1788429896267 fetched successfully","timestamp":"2026-09-08T07:13:11.154Z"}
+{"level":"error","message":"GET /products failed with status 500: Cannot set property query of #<IncomingMessage> which has only a getter","timestamp":"2026-09-08T07:15:56.996Z"}
+{"level":"error","message":"GET /products/ failed with status 500: Cannot set property query of #<IncomingMessage> which has only a getter","timestamp":"2026-09-08T07:16:06.556Z"}
+{"level":"warn","message":"Product validation failed","timestamp":"2026-09-08T07:20:03.035Z"}
+{"level":"info","message":"product with ID:1788429896267 fetched successfully","timestamp":"2026-09-08T08:53:03.528Z"}
+{"level":"warn","message":"Product validation failed","timestamp":"2026-09-08T08:53:31.628Z"}
+{"level":"warn","message":"Product validation failed","timestamp":"2026-09-08T08:53:32.037Z"}
+{"level":"warn","message":"Product validation failed","timestamp":"2026-09-08T08:53:32.249Z"}
+{"level":"info","message":"product with name:Laptop and price:5000 added successfully","timestamp":"2026-09-08T08:53:38.780Z"}
+{"level":"info","message":"product with name:Laptop and price:5000 added successfully","timestamp":"2026-09-08T08:53:38.972Z"}
+{"level":"info","message":"product with name:Laptop and price:5000 added successfully","timestamp":"2026-09-08T08:53:39.224Z"}
+{"level":"info","message":"product with name:Laptop and price:5000 added successfully","timestamp":"2026-09-08T08:53:39.312Z"}
+{"level":"info","message":"product with name:Laptop and price:5000 added successfully","timestamp":"2026-09-08T08:53:39.489Z"}
+{"level":"info","message":"product with name:Laptop and price:5000 added successfully","timestamp":"2026-09-08T08:53:39.721Z"}
+{"level":"info","message":"product with name:Laptop and price:5000 added successfully","timestamp":"2026-09-08T08:53:39.947Z"}
+{"level":"info","message":"product with name:Laptop and price:5000 added successfully","timestamp":"2026-09-08T08:53:40.051Z"}
+{"level":"info","message":"product with name:Laptop and price:5000 added successfully","timestamp":"2026-09-08T08:53:40.231Z"}
+{"level":"info","message":"product with name:Laptop and price:5000 added successfully","timestamp":"2026-09-08T08:53:40.438Z"}
+{"level":"info","message":"product with name:Laptop and price:5000 added successfully","timestamp":"2026-09-08T08:53:40.692Z"}
+{"level":"info","message":"product with name:Laptop and price:5000 added successfully","timestamp":"2026-09-08T08:53:41.302Z"}
+{"level":"info","message":"product with name:Laptop and price:5000 added successfully","timestamp":"2026-09-08T08:53:41.673Z"}
+{"level":"info","message":"product with name:Laptop and price:5000 added successfully","timestamp":"2026-09-08T08:53:41.931Z"}
+{"level":"info","message":"product with name:Laptop and price:5000 added successfully","timestamp":"2026-09-08T08:53:42.024Z"}
+{"level":"info","message":"product with name:Laptop and price:5000 added successfully","timestamp":"2026-09-08T08:53:42.237Z"}
+{"level":"info","message":"product with name:Laptop and price:5000 added successfully","timestamp":"2026-09-08T08:53:42.481Z"}
+{"level":"info","message":"product with name:Laptop and price:5000 added successfully","timestamp":"2026-09-08T08:53:42.717Z"}
+{"level":"info","message":"product with name:Laptop and price:5000 added successfully","timestamp":"2026-09-08T08:53:42.814Z"}
+{"level":"info","message":"product with name:Laptop and price:5000 added successfully","timestamp":"2026-09-08T08:53:42.995Z"}
+{"level":"info","message":"product with name:Laptop and price:5000 added successfully","timestamp":"2026-09-08T08:53:43.216Z"}
+{"level":"info","message":"product with name:Laptop and price:5000 added successfully","timestamp":"2026-09-08T08:53:43.463Z"}
+{"level":"info","message":"product with name:Laptop and price:5000 added successfully","timestamp":"2026-09-08T08:53:43.582Z"}
+{"level":"info","message":"product with name:Laptop and price:5000 added successfully","timestamp":"2026-09-08T08:53:43.781Z"}
+{"level":"info","message":"product with name:Laptop and price:5000 added successfully","timestamp":"2026-09-08T08:53:44.030Z"}
+{"level":"info","message":"product with name:Laptop and price:5000 added successfully","timestamp":"2026-09-08T08:53:44.170Z"}
+{"level":"info","message":"product with name:Laptop and price:5000 added successfully","timestamp":"2026-09-08T08:53:44.350Z"}
+{"level":"info","message":"product with name:Laptop and price:5000 added successfully","timestamp":"2026-09-08T08:53:44.540Z"}
+{"level":"info","message":"product with name:Laptop and price:5000 added successfully","timestamp":"2026-09-08T08:53:44.790Z"}
+{"level":"info","message":"product with name:Laptop and price:5000 added successfully","timestamp":"2026-09-08T08:53:44.910Z"}
+{"level":"info","message":"product with name:Laptop and price:5000 added successfully","timestamp":"2026-09-08T08:53:45.078Z"}
+{"level":"info","message":"product with name:Laptop and price:5000 added successfully","timestamp":"2026-09-08T08:53:45.326Z"}
+{"level":"info","message":"product with name:Laptop and price:5000 added successfully","timestamp":"2026-09-08T08:53:45.446Z"}
+{"level":"info","message":"product with name:Laptop and price:5000 added successfully","timestamp":"2026-09-08T08:53:45.645Z"}
+{"level":"info","message":"product with name:Laptop and price:5000 added successfully","timestamp":"2026-09-08T08:53:45.834Z"}
+{"level":"info","message":"product with name:Laptop and price:5000 added successfully","timestamp":"2026-09-08T08:53:46.066Z"}
+{"level":"info","message":"product with name:Laptop and price:5000 added successfully","timestamp":"2026-09-08T08:53:46.208Z"}
+{"level":"info","message":"product with name:Laptop and price:5000 added successfully","timestamp":"2026-09-08T08:53:46.393Z"}
+{"level":"info","message":"product with name:Laptop and price:5000 added successfully","timestamp":"2026-09-08T08:53:46.580Z"}
+{"level":"info","message":"product with name:Laptop and price:5000 added successfully","timestamp":"2026-09-08T08:53:46.831Z"}
+{"level":"info","message":"product with name:Laptop and price:5000 added successfully","timestamp":"2026-09-08T08:53:46.960Z"}
+{"level":"info","message":"product with name:Laptop and price:5000 added successfully","timestamp":"2026-09-08T08:53:47.158Z"}
+{"level":"info","message":"product with name:Laptop and price:5000 added successfully","timestamp":"2026-09-08T08:53:47.402Z"}
+{"level":"info","message":"product with name:Laptop and price:5000 added successfully","timestamp":"2026-09-08T08:53:47.539Z"}
+{"level":"info","message":"product with name:Laptop and price:5000 added successfully","timestamp":"2026-09-08T08:53:47.741Z"}
+{"level":"info","message":"product with name:Laptop and price:5000 added successfully","timestamp":"2026-09-08T08:53:47.982Z"}
+{"level":"info","message":"product with name:Laptop and price:5000 added successfully","timestamp":"2026-09-08T08:53:48.168Z"}
+{"level":"info","message":"product with name:Laptop and price:5000 added successfully","timestamp":"2026-09-08T08:53:48.419Z"}
+{"level":"info","message":"product with name:Laptop and price:5000 added successfully","timestamp":"2026-09-08T08:53:48.625Z"}
+{"level":"info","message":"product with name:Laptop and price:5000 added successfully","timestamp":"2026-09-08T08:53:48.754Z"}
+{"level":"info","message":"product with name:Laptop and price:5000 added successfully","timestamp":"2026-09-08T08:53:48.949Z"}
+{"level":"info","message":"product with name:Laptop and price:5000 added successfully","timestamp":"2026-09-08T08:53:49.200Z"}
+{"level":"info","message":"product with name:Laptop and price:5000 added successfully","timestamp":"2026-09-08T08:53:49.325Z"}
+{"level":"info","message":"product with name:Laptop and price:5000 added successfully","timestamp":"2026-09-08T08:53:49.524Z"}
+{"level":"info","message":"product with name:Laptop and price:5000 added successfully","timestamp":"2026-09-08T08:53:49.782Z"}
+{"level":"info","message":"product with name:Laptop and price:5000 added successfully","timestamp":"2026-09-08T08:53:49.911Z"}
+{"level":"info","message":"product with name:Laptop and price:5000 added successfully","timestamp":"2026-09-08T08:53:50.123Z"}
+{"level":"info","message":"product with name:Laptop and price:5000 added successfully","timestamp":"2026-09-08T08:53:50.378Z"}
+{"level":"info","message":"product with name:Laptop and price:5000 added successfully","timestamp":"2026-09-08T08:53:50.618Z"}
+{"level":"info","message":"product with name:Laptop and price:5000 added successfully","timestamp":"2026-09-08T08:53:50.736Z"}
+{"level":"info","message":"product with name:Laptop and price:5000 added successfully","timestamp":"2026-09-08T08:53:50.949Z"}
+{"level":"info","message":"product with name:Laptop and price:5000 added successfully","timestamp":"2026-09-08T08:53:51.206Z"}
+{"level":"info","message":"product with name:Laptop and price:5000 added successfully","timestamp":"2026-09-08T08:53:51.347Z"}
+{"level":"info","message":"product with name:Laptop and price:5000 added successfully","timestamp":"2026-09-08T08:53:51.554Z"}
+{"level":"info","message":"product with name:Laptop and price:5000 added successfully","timestamp":"2026-09-08T08:53:51.758Z"}
+{"level":"info","message":"product with name:Laptop and price:5000 added successfully","timestamp":"2026-09-08T08:53:51.999Z"}
+{"level":"info","message":"product with name:Laptop and price:5000 added successfully","timestamp":"2026-09-08T08:53:52.243Z"}
+{"level":"info","message":"product with name:Laptop and price:5000 added successfully","timestamp":"2026-09-08T08:53:52.467Z"}
+{"level":"info","message":"product with name:Laptop and price:5000 added successfully","timestamp":"2026-09-08T08:53:52.575Z"}
+{"level":"info","message":"product with name:Laptop and price:5000 added successfully","timestamp":"2026-09-08T08:53:52.770Z"}
+{"level":"info","message":"product with name:Laptop and price:5000 added successfully","timestamp":"2026-09-08T08:53:53.019Z"}
+{"level":"info","message":"product with name:Laptop and price:5000 added successfully","timestamp":"2026-09-08T08:53:53.165Z"}
+{"level":"info","message":"product with name:Laptop and price:5000 added successfully","timestamp":"2026-09-08T08:53:53.346Z"}
+{"level":"info","message":"product with name:Laptop and price:5000 added successfully","timestamp":"2026-09-08T08:53:53.595Z"}
+{"level":"info","message":"product with name:Laptop and price:5000 added successfully","timestamp":"2026-09-08T08:53:53.828Z"}
+{"level":"info","message":"product with name:Laptop and price:5000 added successfully","timestamp":"2026-09-08T08:53:54.068Z"}
+{"level":"info","message":"product with name:Laptop and price:5000 added successfully","timestamp":"2026-09-08T08:53:54.171Z"}
+{"level":"info","message":"product with name:Laptop and price:5000 added successfully","timestamp":"2026-09-08T08:53:54.362Z"}
+{"level":"info","message":"product with name:Laptop and price:5000 added successfully","timestamp":"2026-09-08T08:53:54.598Z"}
+{"level":"info","message":"product with name:Laptop and price:5000 added successfully","timestamp":"2026-09-08T08:53:54.745Z"}
+{"level":"info","message":"product with name:Laptop and price:5000 added successfully","timestamp":"2026-09-08T08:53:54.926Z"}
+{"level":"info","message":"product with name:Laptop and price:5000 added successfully","timestamp":"2026-09-08T08:53:55.182Z"}
+{"level":"info","message":"product with name:Laptop and price:5000 added successfully","timestamp":"2026-09-08T08:53:55.345Z"}
+{"level":"error","message":"GET /products?page=2&limit=5 failed with status 500: products is not defined","timestamp":"2026-09-08T09:42:19.556Z"}
+{"level":"error","message":"GET /products?page=1&limit=5 failed with status 500: products is not defined","timestamp":"2026-09-08T09:42:31.565Z"}
