@@ -1,0 +1,13 @@
+{"level":"error","message":"POST /products failed with status 400: Unexpected token '\"', \"\"{\\n  \\\"na\"... is not valid JSON","timestamp":"2026-09-08T12:40:29.881Z"}
+{"level":"warn","message":"Product validation failed","timestamp":"2026-09-08T12:40:54.754Z"}
+{"level":"info","message":"product with name:Chimni added successfully","timestamp":"2026-09-08T12:41:08.277Z"}
+{"level":"error","message":"POST /products failed with status 400: Unexpected token '\"', \"\"{\\n  \\\"na\"... is not valid JSON","timestamp":"2026-09-08T12:41:22.316Z"}
+{"level":"error","message":"POST /products failed with status 400: Unexpected token '\"', \"\"{\\n  \\\"na\"... is not valid JSON","timestamp":"2026-09-08T12:41:27.432Z"}
+{"level":"error","message":"POST /products failed with status 400: Unexpected token '\"', \"\"{\\n  \\\"na\"... is not valid JSON","timestamp":"2026-09-08T12:41:33.335Z"}
+{"level":"error","message":"POST /products failed with status 400: Unexpected token '\"', \"\"{\\n  \\\"na\"... is not valid JSON","timestamp":"2026-09-08T12:41:39.311Z"}
+{"level":"warn","message":"Product validation failed","timestamp":"2026-09-08T12:41:45.213Z"}
+{"level":"info","message":"product with name:Chimni added successfully","timestamp":"2026-09-08T12:41:50.402Z"}
+{"level":"warn","message":"Product validation failed","timestamp":"2026-09-14T11:30:16.936Z"}
+{"level":"info","message":"product with ID:1 fetched successfully","timestamp":"2026-09-14T11:41:02.154Z"}
+{"level":"warn","message":"product with ID:122321 not found","timestamp":"2026-09-14T11:42:24.637Z"}
+{"level":"error","message":"GET /products/122321 failed with status 404: Product not found","timestamp":"2026-09-14T11:42:24.639Z"}

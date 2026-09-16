@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "name": "Laptop",
+    "description": "A high-performance laptop for professionals",
+    "price": 1200
+  },
+  {
+    "id": 2,
+    "name": "Wireless Mouse",
+    "description": "Ergonomic wireless mouse with long battery life",
+    "price": 25
+  },
+  {
+    "id": 3,
+    "name": "Standing Desk",
+    "description": "Adjustable standing desk for home and office use",
+    "price": 450
+  },
+  {
+    "id": 4,
+    "name": "Mechanical Keyboard",
+    "description": "Tactile mechanical keyboard with RGB lighting",
+    "price": 100
+  },
+  {
+    "id": 5,
+    "name": "Office Chair",
+    "description": "Comfortable ergonomic chair with lumbar support",
+    "price": 250
+  },
+  {
+    "id": 6,
+    "name": "Notebook",
+    "description": "Lined notebook for daily notes and journaling",
+    "price": 8
+  },
+  {
+    "id": 7,
+    "name": "Webcam",
+    "description": "1080p HD webcam for video calls and streaming",
+    "price": 75
+  },
+  {
+    "id": 8,
+    "name": "Desk Lamp",
+    "description": "LED desk lamp with adjustable brightness levels",
+    "price": 40
+  },
+  {
+    "id": 9,
+    "name": "Ballpoint Pen Set",
+    "description": "Set of 10 smooth-writing ballpoint pens",
+    "price": 12
+  },
+  {
+    "id": 10,
+    "name": "Monitor",
+    "description": "27-inch 4K monitor with IPS display panel",
+    "price": 350
+  },
+  {
+    "id": 1788871268274,
+    "name": "Chimni",
+    "description": "New is here and ther",
+    "price": 50
+  },
+  {
+    "id": 1788871310400,
+    "name": "Chimni",
+    "description": "New is here and ther",
+    "price": 60
+  }
+]
