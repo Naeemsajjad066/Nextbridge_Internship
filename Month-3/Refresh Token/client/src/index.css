@@ -1,0 +1,36 @@
+@import 'tailwindcss';
+
+:root {
+  /* Background */
+  --color-bg-gradient-start: #dbeafe;
+  --color-bg-gradient-end: #ede9fe;
+
+  /* Surface */
+  --color-card-bg: #ffffff;
+  --color-icon-bg: #f1f5f9;
+  --color-input-bg: #f8fafc;
+  --color-input-border: #e2e8f0;
+
+  /* Primary action color - indigo */
+  --color-button-bg: #4f46e5;
+  --color-button-text: #ffffff;
+
+  /* Text */
+  --color-text-dark: #0f172a;
+  --color-text-muted: #64748b;
+
+  /* Error */
+  --color-error: #ef4444;
+
+  /* Border radius */
+  --radius-lg: 1.5rem;
+}
+
+body {
+  font-family:
+    system-ui,
+    -apple-system,
+    sans-serif;
+  background-color: #f8fafc;
+  color: var(--color-text-dark);
+}

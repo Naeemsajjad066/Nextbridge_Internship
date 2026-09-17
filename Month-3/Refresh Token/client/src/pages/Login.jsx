@@ -1,0 +1,102 @@
+import { Link } from 'react-router-dom'
+import { useForm } from 'react-hook-form'
+import { yupResolver } from '@hookform/resolvers/yup'
+import AuthLayout from '../components/layout/AuthLayout'
+import AuthCard from '../components/auth/AuthCard'
+import Input from '../components/ui/Input'
+import Button from '../components/ui/Button'
+import { LoginIcon, EmailIcon, LockIcon, EyeOffIcon } from '../components/icons'
+import { loginSchema } from '../utils/validationSchemas'
+import { useLogin } from '../hooks'
+
+function Login() {
+  const { login, isLoading } = useLogin()
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm({
+    resolver: yupResolver(loginSchema),
+    mode: 'onChange',
+  })
+
+  const onSubmit = async (formData) => {
+    await login(formData.email, formData.password)
+  }
+
+  return (
+    <AuthLayout>
+      <AuthCard
+        icon={LoginIcon}
+        title='Sign in with email'
+        subtitle={
+          <>
+            Make a new doc to bring your words, data,
+            <br />
+            and teams together. For free
+          </>
+        }
+      >
+        <form onSubmit={handleSubmit(onSubmit)} noValidate>
+          {/* Email Input */}
+          <div className='mb-3'>
+            <Input
+              type='email'
+              id='email'
+              placeholder='Email'
+              icon={EmailIcon}
+              error={errors.email?.message}
+              {...register('email')}
+            />
+          </div>
+
+          {/* Password Input */}
+          <div className='mb-2'>
+            <Input
+              type='password'
+              id='password'
+              placeholder='Password'
+              icon={LockIcon}
+              rightIcon={EyeOffIcon}
+              error={errors.password?.message}
+              {...register('password')}
+            />
+          </div>
+
+          {/* Forgot Password */}
+          <div className='text-right mb-5'>
+            <a
+              href='#'
+              className='text-xs text-[var(--color-text-muted)] hover:text-[var(--color-text-dark)] transition-colors'
+            >
+              Forgot password?
+            </a>
+          </div>
+
+          {/* Submit Button */}
+          <Button
+            type='submit'
+            variant='primary'
+            className='w-full'
+            disabled={isLoading}
+          >
+            {isLoading ? 'Signing in...' : 'Get Started'}
+          </Button>
+
+          {/* Sign Up Link */}
+          <p className='text-center text-xs text-[var(--color-text-muted)] mt-4'>
+            Don't have an account?{' '}
+            <Link
+              to='/signup'
+              className='text-[var(--color-button-bg)] font-medium hover:underline'
+            >
+              Sign up
+            </Link>
+          </p>
+        </form>
+      </AuthCard>
+    </AuthLayout>
+  )
+}
+
+export default Login
