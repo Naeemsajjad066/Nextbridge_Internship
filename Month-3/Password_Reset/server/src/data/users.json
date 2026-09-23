@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Naeem",
+    "email": "naeem@gmail.com",
+    "password": "$2b$10$70CXR.gCfDUxUF4kxzI9Z.R4c8EkvxjSpQRGtZkYsY1HpYSYALQfy",
+    "role": "user"
+  },
+  {
+    "name": "waseem",
+    "email": "waseem@gmail.com",
+    "password": "$2b$10$RgAgMu7s9f6gVJAQodAIpeBiaPQGh.UWPBA8xQydAg15CbcviZFGe",
+    "role": "admin"
+  },
+  {
+    "name": "Naeem Sajjad",
+    "email": "naeemsajjad235@gmail.com",
+    "password": "$2b$10$Bf0V4t5T6jDf9aanCutu8exzgq8aLFKY/OFrEmSZwFZJPQlKs4v7W",
+    "role": "user"
+  }
+]
